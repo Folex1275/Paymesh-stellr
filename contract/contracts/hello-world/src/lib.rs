@@ -1,11 +1,11 @@
 #![no_std]
-use soroban_sdk::{contract, contractimpl, Env, BytesN, String, Address};
+use soroban_sdk::{contract, contractimpl, Address, BytesN, Env, String};
 
 // 1. Declare the foundational modules (Requirement: Modular Structure)
 pub mod base {
-    pub mod types;
-    pub mod events;
     pub mod errors;
+    pub mod events;
+    pub mod types;
 }
 
 pub mod interfaces {
