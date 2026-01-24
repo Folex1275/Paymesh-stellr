@@ -1,8 +1,5 @@
 use crate::{AutoShareContract, AutoShareContractClient};
-use soroban_sdk::{
-    testutils::{Address as _,},
-    Address, BytesN, Env, String,
-};
+use soroban_sdk::{testutils::Address as _, Address, BytesN, Env, String};
 
 #[test]
 fn test_create_and_get_success() {
